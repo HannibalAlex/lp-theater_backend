@@ -1,0 +1,75 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: localhost
+-- Tiempo de generación: 24-06-2024 a las 00:56:50
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `teatro_argentino`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `teatro_arg`
+--
+
+CREATE TABLE `teatro_arg` (
+  `id` int(11) NOT NULL,
+  `Nombre` varchar(20) NOT NULL,
+  `Apellido` varchar(20) NOT NULL,
+  `Documento` int(8) NOT NULL,
+  `Email` varchar(30) NOT NULL,
+  `Password` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `teatro_arg`
+--
+
+INSERT INTO `teatro_arg` (`id`, `Nombre`, `Apellido`, `Documento`, `Email`, `Password`) VALUES
+(1, 'Ulises', 'Cabrera', 22635987, 'ulicabre@hotmail.com', '2587yY&%'),
+(2, 'Morgana', 'Garmendia', 12843001, 'morgana@gmail.com', '6t9J$\"./345'),
+(3, 'Isolda', 'Latas', 25304789, 'isolatas@yahoo.com.ar', '41235987'),
+(4, 'Lorenzio', 'Auditore', 23985012, 'auditore@gmail.com', 'yur456()'),
+(5, 'Ricardo', 'Ponce de León', 12568147, 'richardpl@gmail.com', '39=$6543'),
+(6, 'Godofredo', 'Cervantes', 29256104, 'godofc@hotmail.com', 'hju897%$');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `teatro_arg`
+--
+ALTER TABLE `teatro_arg`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `teatro_arg`
+--
+ALTER TABLE `teatro_arg`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
