@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href = "{{ url_for('static', filename = 'styles.css') }}"/>
+  <title>Base de datos</title>
+</head>
+<body>
+    <h1>Base de datos</h1>
+    <p>{{ mensaje }}</p>
+    <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Documento</th>
+      <th>Email</th>
+      <th>Password</th>
+    </tr>
+    {% for row in results %}
+    <tr>
+      <td>{{ row[0] }}</td>
+      <td>{{ row[1] }}</td>
+      <td>{{ row[2] }}</td>
+      <td>{{ row[3] }}</td>
+      <td>{{ row[4] }}</td>
+      <td>{{ row[5] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <h2>Ingresar datos</h2>
+  <form action="{{ url_for('index') }}" method="POST">
+    <label for="Nombre">Nombre:</label>
+    <input type="text" id = "Nombre" name="Nombre" required>
+    <label for="Apellido">Apellido:</label>
+    <input type="text" id = "Apellido" name="Apellido" required>
+    <label for="Documento">Documento:</label>
+    <input type="text" id = "Documento" name="Documento" required>
+    <br><br>
+    <label for="Email">Email:</label>
+    <input type="text" id = "Email" name="Email" required>
+    <label for="Password">Contraseña:</label>
+    <input type="text" id = "Password" name="Password" required>
+    <button type="submit">Enviar datos</button>
+  </form>
+</body>
+</html>
