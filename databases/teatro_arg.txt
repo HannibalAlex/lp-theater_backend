@@ -1,0 +1,12 @@
+mysql> SELECT * FROM teatro_arg;
++----+-----------+----------------+-----------+-----------------------+-------------+
+| id | Nombre    | Apellido       | Documento | Email                 | Password    |
++----+-----------+----------------+-----------+-----------------------+-------------+
+|  1 | Ulises    | Cabrera        |  22635987 | ulicabre@hotmail.com  | 2587yY&%    |
+|  2 | Morgana   | Garmendia      |  12843001 | morgana@gmail.com     | 6t9J$"./345 |
+|  3 | Isolda    | Latas          |  25304789 | isolatas@yahoo.com.ar | 41235987    |
+|  4 | Lorenzio  | Auditore       |  23985012 | auditore@gmail.com    | yur456()    |
+|  5 | Ricardo   | Ponce de León  |  12568147 | richardpl@gmail.com   | 39=$6543    |
+|  6 | Godofredo | Cervantes      |  29256104 | godofc@hotmail.com    | hju897%$    |
++----+-----------+----------------+-----------+-----------------------+-------------+
+6 rows in set (0.00 sec)
