@@ -1,0 +1,1 @@
+Dentro de esta carpeta se coloca la base de datos teatro_arg.sql
